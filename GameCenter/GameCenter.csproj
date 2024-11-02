@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ImagesGame\**" />
+    <Compile Remove="NewFolder1\**" />
+    <EmbeddedResource Remove="ImagesGame\**" />
+    <EmbeddedResource Remove="NewFolder1\**" />
+    <None Remove="ImagesGame\**" />
+    <None Remove="NewFolder1\**" />
+    <Page Remove="ImagesGame\**" />
+    <Page Remove="NewFolder1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ImagesProject\BackGroundProject.jpg" />
+    <None Remove="ImagesProject\BlackJackLogo.jpg" />
+    <None Remove="ImagesProject\CountriesPhoto.jpg" />
+    <None Remove="ImagesProject\CriptoPhoto.jpg" />
+    <None Remove="ImagesProject\FlappyBirdPhoto.jpg" />
+    <None Remove="ImagesProject\PackmanPhoto.jpg" />
+    <None Remove="ImagesProject\SpaceShooterPhoto.jpg" />
+    <None Remove="ImagesProject\TicTacToePhoto.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ImagesProject\BackGroundProject.jpg" />
+    <Resource Include="ImagesProject\BlackJackLogo.jpg" />
+    <Resource Include="ImagesProject\CountriesPhoto.jpg" />
+    <Resource Include="ImagesProject\CriptoPhoto.jpg" />
+    <Resource Include="ImagesProject\FlappyBirdPhoto.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlackJackProject\BlackJackProject.csproj" />
+    <ProjectReference Include="..\CountriesProject\CountriesProject.csproj" />
+    <ProjectReference Include="..\Cripto Coin\CriptoCoin.csproj" />
+    <ProjectReference Include="..\NewTicTacTOE\NewTicTacTOE.csproj" />
+    <ProjectReference Include="..\Packmen\PackmanGame.csproj" />
+    <ProjectReference Include="..\Space Shooter Game\SpaceShooterGame.csproj" />
+    <ProjectReference Include="..\WpfApp1\FlappyBirdGame.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ImagesProject\PackmanPhoto.jpg" />
+    <Resource Include="ImagesProject\SpaceShooterPhoto.jpg" />
+    <Resource Include="ImagesProject\TicTacToePhoto.jpg" />
+  </ItemGroup>
+
+</Project>
